@@ -15,5 +15,6 @@ streamlit run app.py
 Railway can start the app with either `Procfile` or `railway.json`:
 
 ```bash
-streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+# https://web-production-5a908.up.railway.app
+
 ```
