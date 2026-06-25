@@ -1,24 +1,19 @@
 # Drug Treatment Analysis
 
-This Streamlit app turns the `Drugs.ipynb` problem statement into an interactive dashboard for comparing Drugs A, B, and C.
+Streamlit dashboard converted from `Drugs.ipynb`.
 
-It evaluates:
+The app uses the full 49-patient dataset from the notebook: 9 hand-entered rows plus the 40 extra rows created in `Drugs.ipynb` with `np.random.seed(42)`.
 
-- Blood pressure reduction
-- Recovery days
-- Patient recovery rate
-- Side-effect distribution
-
-Run it with:
+## Run locally
 
 ```bash
 streamlit run app.py
 ```
 
-You can use the built-in sample dataset or upload a CSV/Excel file with these columns:
+## Deploy on Railway
 
-- `drug`
-- `bp_reduction`
-- `recovery_days`
-- `recovered`
-- `side_effects`
+Railway can start the app with either `Procfile` or `railway.json`:
+
+```bash
+streamlit run app.py --server.port=$PORT --server.address=0.0.0.0
+```
